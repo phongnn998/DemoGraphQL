@@ -17,7 +17,7 @@ namespace DemoGraphQL.IoCRegistrar
             services.AddTransient(typeof(IRepository<,>), typeof(EfRepository<,>));
 
             ServiceRegistar(services);
-            GraptQLTypeRegistar(services);
+            GraphQLTypeRegistar(services);
 
             return services;
         }
@@ -27,7 +27,7 @@ namespace DemoGraphQL.IoCRegistrar
             services.AddTransient<ITodoItemService, ToDoItemService>();
         }
 
-        private static void GraptQLTypeRegistar(IServiceCollection services)
+        private static void GraphQLTypeRegistar(IServiceCollection services)
         {
             // Roots.
             services.AddScoped<ISchema, MainSchema>();
