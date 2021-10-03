@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "Example": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "ui/playground",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:4000"
+    }
+  }
+}

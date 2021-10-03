@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resolves\" />
+    <None Remove="Types\" />
+    <None Remove="AutoMapper" />
+    <None Remove="GraphQL" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Types\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="GraphQL" Version="4.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoGraphQL.EntityFramework\DemoGraphQL.EntityFramework.csproj" />
+    <ProjectReference Include="..\DemoGraphQL.Services\DemoGraphQL.Domain.csproj" />
+  </ItemGroup>
+</Project>
